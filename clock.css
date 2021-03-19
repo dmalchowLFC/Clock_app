@@ -1,0 +1,22 @@
+body {
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+h1 {
+    text-align: center;
+    align-content: center;
+    background-color: aqua;
+    font-size:xx-large;
+}
+
+p {
+    text-align: center;
+    font-size: 35px;
+}
+
+div {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
