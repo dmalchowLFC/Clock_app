@@ -1,15 +1,16 @@
 let today = new Date();
+const dateDisplay = document.getElementById("date");
 
 let dd = String(today.getDate()).padStart(2, '0');
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = days[today.getDay()];
 function end(dd) {
     let dayEnding;
-    if (dd == "01") {
+    if (dd == "01" || dd == "21" || dd == "31") {
         dayEnding = "st"
-    } else if (dd == "02") {
+    } else if (dd == "02" || dd == "22") {
         dayEnding = "nd"
-    } else if (dd == "03") {
+    } else if (dd == "03" || dd == "23") {
         dayEnding = "rd"
     } else {
         dayEnding = "th"
@@ -37,4 +38,5 @@ let monthDict = {
 let year = today.getFullYear();
 
 let now = day + ", " + monthDict[month] + ' ' + dd + end(dd) + ' ' + year;
+dateDisplay.textContent = now;
 console.log(now)
