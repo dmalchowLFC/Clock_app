@@ -10,12 +10,12 @@ h1 {
     font-size:xx-large;
 }
 
-p {
+#date {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
 }
 
-div {
+#time {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
